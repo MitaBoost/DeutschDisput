@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,13 +15,13 @@ body {
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --primary: 200 14% 93%;
+    --primary-foreground: 210 93% 15%;
+    --secondary: 210 22% 80%;
+    --secondary-foreground: 210 93% 15%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
+    --accent: 166 57% 44%;
     --accent-foreground: 0 0% 9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -49,13 +50,13 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --primary: 210 93% 15%;
+    --primary-foreground: 200 14% 93%;
+    --secondary: 210 22% 31%;
+    --secondary-foreground: 210 93% 15%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --accent: 166 57% 44%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -84,5 +85,21 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/*
+* Primary color: A light, warm grey (#F0F0F0) for readability and a clean interface.
+* Secondary color: A muted blue (#64B5F6) to indicate interactive elements and section headers.
+* Accent: A bright teal (#26A69A) for highlighting active states or important information.
+*/
+@layer base {
+  :root {
+    --background: 220 13% 96%; /* #F0F0F0 */
+    --foreground: 220 10% 39%;
+    --primary: 211 48% 63%;  /* #64B5F6 */
+    --primary-foreground: 0 0% 100%;
+    --accent: 172 50% 37%; /* #26A69A */
+    --accent-foreground: 0 0% 100%;
   }
 }
