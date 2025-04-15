@@ -5,7 +5,6 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from '@/co
 import {Badge} from '@/components/ui/badge';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from '@/components/ui/select';
-import {Switch} from '@/components/ui/switch';
 import {Toaster, } from "@/components/ui/toaster"
 import {useEffect, useState} from 'react';
 
@@ -118,15 +117,21 @@ export default function Home() {
             </Select>
           </div>
           <div>
-            <div className="flex items-center justify-between">
-              <label htmlFor="level-switch" className="block text-sm font-medium leading-6 text-gray-900">
-                CEFR Level: {level}
-              </label>
-              <Switch id="level-switch" checked={level === 'B2'} onCheckedChange={(checked) => {
-                const newLevel = checked ? 'B2' : 'A1';
-                handleLevelChange(newLevel);
-              }}/>
-            </div>
+            <label htmlFor="level-select" className="block text-sm font-medium leading-6 text-gray-900">
+              CEFR Level:
+            </label>
+            <Select onValueChange={handleLevelChange} defaultValue={level}>
+              <SelectTrigger id="level-select">
+                <SelectValue placeholder="Select a level"/>
+              </SelectTrigger>
+              <SelectContent>
+                {levels.map((levelItem) => (
+                  <SelectItem key={levelItem} value={levelItem}>
+                    {levelItem}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
           <button
             onClick={handleArgumentGeneration}
@@ -169,4 +174,3 @@ export default function Home() {
     </div>
   );
 }
-
