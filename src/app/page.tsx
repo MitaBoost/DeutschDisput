@@ -5,41 +5,41 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from '@/co
 import {Badge} from '@/components/ui/badge';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from '@/components/ui/select';
-import {Toaster, } from "@/components/ui/toaster"
+import {Toaster} from "@/components/ui/toaster"
 import {useEffect, useState} from 'react';
 
 const topics = [
-  'Autofreie Innenstädte + öffentlicher Verkehr',
-  'Computer in jedem Klassenzimmer + Computer für Kinder + Smartphones für Kinder + Smartphones bei der Arbeit + Computer und Karrierechancen + Computerkenntnisse',
-  'Mit Geschwistern leben + Sollten junge Erwachsene mit 18 Jahren alleine leben + "Hotel Mama"',
-  'Mehrere Sprachen lernen + Fremdsprachen',
-  'Extremsportarten + Sport als Beruf + Sportschulen + Radfahren',
-  'Urlaub im In- oder Ausland + Verwandte besuchen + Reisen im Urlaub + Urlaub mit der Familie + Strandurlaub',
-  'Musikinstrumente + Musikschule + Musik im Alltag',
-  'Bio-Lebensmittel + vegetarisches Essen + Gekochtes oder Fast Food + Fertiggerichte',
-  'Informationen im Internet vertrauen',
-  'Online-Shopping oder in Einkaufszentren',
-  'Wahre Liebe im Internet finden',
-  'Soziale Netzwerke',
-  'Wege nach der Schule + Studieren im In- oder Ausland',
-  'Mittagsschlaf – Mittagspause',
-  'Rauchen + Rauchverbote an öffentlichen Orten/Restaurants',
-  'Leben auf dem Land oder in der Stadt',
-  'Schulnoten – ihre Auswirkungen',
-  'Hausarbeiten',
-  'Haustiere',
-  'Gedruckte vs. E-Books',
-  'Eltern wählen die Kleidung ihrer Kinder',
-  'Berufstätige Eltern: Sind Großeltern die Lösung? + Kinderbetreuung ohne Kindergarten + Kindergarten',
-  'Neue oder gebrauchte Waren (Second-Hand-Kleidung)',
-  'Parks in der Stadt',
-  'Kinder vs. Karriere + Macht Arbeit uns krank?',
-  'Reisebüros oder Online-Buchung',
+  'Stadtzentrum ohne Autos + öffentliche Verkehrsmittel',
+  'Computer für jeden Kursraum + Computer für Kinder + Handy für Kinder + Handy in der Firma + computer und berufchancen + computerkenntnisse',
+  'Leben mit geschwister + sollten jugendlichen mit 18 alleine leben + hotel mama',
+  'Mehrere sprachen lernen + fremdsprachen',
+  'Extrem sport + sport als beruf + sportschule + Fahrrad',
+  'Urlaub in heimatland oder ausland + urlaub bei verwandten + im urlaub verreisen + urlaub mit famillie + urlaub am strand',
+  'Musikinstrument + musik schule + musik im alltag',
+  'Bio essen + vegetarische essen + gekochtes essen oder fastfood + fertig essen',
+  'Glauben information im internet',
+  'Einkaufen im internet oder einkaufzentrum',
+  'Grosse liebe im internet',
+  'Soziale netzwerk',
+  'Wege nach der schule + studieren im heimatland oder ausland',
+  'Mittag schlafen – mittagspause',
+  'Rauchen + rauchen verboten an offentlichen orten/resturants',
+  'Leben auf dem land oder in der stadt',
+  'Schulnoten auswirkungen',
+  'Haushalt',
+  'Haustier',
+  'Gedruckte oder E bucher',
+  'Die eltern Klammoten entscheiden',
+  'Berufstätige Eltern: sind Großeltern die Lösung + betreung von kinder ohne kindergarten + kindergarten',
+  'Neue oder gebrauchte Ware(Second-Hand Kleidung)',
+  'Parks in der stadt',
+  'Kinder oder karrier + arbeit macht uns krank',
+  'Reise buro oder online buchen',
   'Jungen und Mädchen in der Schule trennen',
-  '24-Stunden-geöffnete Geschäfte',
+  '24 stunden geoffnet geschafte',
   'Feste feiern',
-  'Haben Kinder zu wenig Freizeit?',
-  'Häusliche Gewalt',
+  'Haben kinder wenig freizeit',
+  'Gewalt in der familie',
 ];
 
 const levels = ['A1', 'A2', 'B1', 'B2'] as const;
@@ -174,3 +174,4 @@ export default function Home() {
     </div>
   );
 }
+
